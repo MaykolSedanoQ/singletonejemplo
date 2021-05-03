@@ -1,15 +1,15 @@
-public class Logger {
+public class Singleton {
 
-    private  static Logger log;
+    private  static Singleton log;
     private  String value;
-    private Logger(){
+    private Singleton(){
 
     }
 
-    public static Logger getInstance(){
+    public static Singleton getInstance(){
 
         if (log == null){
-            log = new Logger();
+            log = new Singleton();
         }
         return log;
     }

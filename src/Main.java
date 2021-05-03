@@ -2,12 +2,12 @@ public class Main {
 
     public static void main(String[] args){
 
-     Logger logger = Logger.getInstance();
+     Singleton singleton = Singleton.getInstance();
     // logger.log("Hola mundo!");
-     Logger logger_1= Logger.getInstance();
+     Singleton singleton_1 = Singleton.getInstance();
 
-     logger.setValue("Mensaje");
-     System.out.println(logger_1.getValue());
+     singleton.setValue("Hola Campeones");
+     System.out.println(singleton_1.getValue());
 
     }
 }
